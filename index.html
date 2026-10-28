@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Experiencia educativa transmedia para comprender el TDAH desde la empatía.">
+  <title>Otra forma de orinar | TDAH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="imagenes/Mesa de trabajo 1_1@4x-8.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-parallax-image="imagenes/parallax.png">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Otra forma de mirar, inicio">
+  <img class="brand-logo" src="imagenes/solo letra.png" alt="">
+</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-expanded="false">Menú</button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <details class="nav-group"><summary>Explorar</summary><div class="nav-submenu"><a href="#que-es">¿Qué es?</a><a href="#personajes">Personajes</a><a href="#recorrido">Recorrido</a></div></details>
+        <details class="nav-group"><summary>Recursos</summary><div class="nav-submenu"><a href="#blog">Notas</a><a href="#galeria">Galería</a><a href="#minijuegos">Minijuegos</a></div></details>
+        <a href="#especialistas">Especialistas</a><a href="#entrevistas">Entrevistas</a><a class="creators-nav-link" href="creadores.html">Creadores</a><a href="#redes">Redes</a>
+        <button id="contrast-toggle" class="contrast-button" type="button" aria-pressed="false">Modo oscuro</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="info-marquee" role="region" aria-label="Avisos de la experiencia"><div class="info-marquee-track"><span class="marquee-group"><span>✦ Mira · piensa · conversa</span><span aria-hidden="true">•</span><span>Aprender sobre TDAH también es aprender a acompañar</span><span aria-hidden="true">•</span><span>Tu ritmo también cuenta</span><span aria-hidden="true">•</span></span><span class="marquee-group" aria-hidden="true"><span>✦ Mira · piensa · conversa</span><span aria-hidden="true">•</span><span>Aprender sobre TDAH también es aprender a acompañar</span><span aria-hidden="true">•</span><span>Tu ritmo también cuenta</span><span aria-hidden="true">•</span></span></div></div>
+  <button class="floating-like like-companion" id="floating-like" type="button" aria-label="Me gusta esta página" aria-pressed="false"><span class="like-companion-icon" aria-hidden="true"><svg class="like-heart" viewBox="0 0 36 32" focusable="false"><path class="like-heart-main" d="M18 28.2S4.1 19.7 4.1 11.2C4.1 7.1 7 4.5 10.7 4.5c3 0 5.5 1.7 7.3 4.3 1.8-2.6 4.3-4.3 7.3-4.3 3.7 0 6.6 2.6 6.6 6.7 0 8.5-13.9 17-13.9 17Z"/><path class="like-heart-glint" d="m27.6 1.4.8 2.1 2.1.8-2.1.8-.8 2.1-.8-2.1-2.1-.8 2.1-.8.8-2.1Z"/></svg></span><span class="floating-like-label">Me gusta</span></button>
+  <main id="contenido">
+  <section class="child-guide-first" aria-label="Guía para comenzar">
+      <dialog class="child-tutorial" id="child-tutorial" aria-labelledby="child-tutorial-title"><div class="child-tutorial-card"><button class="child-tutorial-close" type="button" aria-label="Cerrar guía">×</button><p class="section-number">Aventura guiada · <span id="tutorial-step-count">Paso 1 de 11</span></p><h3 id="child-tutorial-title">¡Hola! Vamos a explorar</h3><p id="child-tutorial-copy">Conoce a los personajes y sus historias. Puedes ir a tu ritmo y pedir ayuda a una persona adulta.</p><div class="child-tutorial-progress"><span id="tutorial-progress-bar"></span></div><div class="child-tutorial-actions"><button type="button" class="outline-button" id="tutorial-prev" disabled>Anterior</button><a class="button tutorial-go" id="tutorial-go" href="#que-es">Ir a esta sección <span aria-hidden="true">↗</span></a><button type="button" class="button" id="tutorial-next">Siguiente</button></div></div></dialog></section>
+  <section class="welcome-video-section" id="bienvenida" aria-labelledby="welcome-video-title">
+    <div class="floating-particles welcome-particles" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span><span>·</span><span>✧</span><span>✦</span><span>○</span><span>✦</span><span>✧</span><span>•</span><span>✦</span><span>✧</span><span>✦</span><span>·</span><span>✧</span><span>✦</span></div>
+    <div class="container welcome-video-inner">
+      <div class="welcome-video-copy">
+        <p class="section-number">Antes de comenzar</p>
+        <h2 id="welcome-video-title">Bienvenidos a <em>otra forma de mirar.</em></h2>
+        <p>Una bienvenida audiovisual para conocer el propósito de esta experiencia y comenzar el recorrido a tu ritmo.</p>
+      </div>
+      <div class="welcome-video-stage">
+        <div class="child-guide-launch"><div class="guide-launch-copy"><p>¿Es tu primera vez por aquí?</p><small>¡Te acompañamos! Elige una historia, explora a tu ritmo y descubre cada rincón.</small></div><button type="button" class="button" id="open-child-tutorial">¡Sí, quiero explorar!</button></div>
+        <div class="welcome-video-placeholder" id="welcome-video-placeholder" aria-label="Video introductivo de bienvenida">
+          <video class="welcome-video-embed welcome-video-file" src="video%20de%20bienvenida/vide%20de%20bienvenida.mp4" title="Video de bienvenida: Otra forma de mirar" autoplay playsinline controls preload="auto" aria-label="Video de bienvenida, reproducción automática con sonido"></video>
+        </div>
+        <p class="welcome-video-note">El video se reproduce una sola vez. Si tu navegador bloquea el inicio automático con sonido, pulsa reproducir.</p>
+      </div>
+    </div>
+  </section>
+  <section class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="floating-particles" aria-hidden="true"><span class="particle particle-one">✦</span><span class="particle particle-two">•</span><span class="particle particle-three">✧</span><span class="particle particle-four">•</span><span class="particle particle-five">✦</span><span class="particle particle-six">○</span><span class="particle particle-seven">•</span><span class="particle particle-eight">✧</span></div>
+
+    <div class="hero-copy">
+      <p class="eyebrow">Una experiencia transmedia educativa</p>
+
+      <h1 id="hero-title">
+        El TDAH no se ve igual en todas las personas.
+      </h1>
+
+      <p class="hero-text">
+        Cinco historias. Cinco formas de procesar el mundo. Un recorrido para comprender, acompañar y dejar atrás las etiquetas.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="#personajes">
+          Conoce las historias <span aria-hidden="true">→</span>
+        </a>
+
+        <a class="text-link" href="#que-es">
+          Empezar por lo esencial
+        </a>
+      </div>
+
+      <p class="hero-note">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        Diseñado para estudiantes, familias y docentes
+      </p>
+    </div>
+
+    <!-- Logo grande ubicado a la derecha -->
+    <div class="hero-art" aria-label="Logo principal de Otra forma de mirar">
+      <img
+        class="hero-logo"
+        src="imagenes/icono amarillo - copia.png"
+        alt="Logo de Otra forma de mirar"
+      >
+    </div>
+  </div>
+</section>
+
+
+    <section class="intro section character-zone" id="que-es" aria-labelledby="intro-title"><img class="character-decor character-decor-rem" src="imagenes/diaactu1.png" alt="" aria-hidden="true" loading="lazy"
+      >
+      <div class="container split-heading">
+        <p class="section-number">Introducción · Lo esencial</p>
+        <div>
+          <h2 id="intro-title">Comprender cambia<br><em>la forma de acompañar.</em></h2>
+          <p class="lead">A veces la atención no se pierde: cambia de dirección. Una tarea larga, muchas voces o una instrucción poco clara pueden hacer que el colegio se sienta más difícil de lo que parece desde afuera.</p>
+          <button class="content-expand-button intro-expand-button" type="button" aria-expanded="false" aria-controls="intro-details">Leer la introducción completa <span aria-hidden="true">+</span></button>
+          <div class="expandable-content intro-details" id="intro-details" hidden>
+            <p>El TDAH puede influir en la atención, la organización, los impulsos y la energía, pero no cuenta toda la historia de una persona. También hay curiosidad, imaginación, humor, sensibilidad y ganas de hacer las cosas bien. Lo que funciona para alguien puede no funcionar para otra persona; por eso conviene observar, preguntar y probar juntos.</p>
+            <p>Esta página no diagnostica ni reemplaza una valoración profesional. Es una invitación a mirar con más calma lo que ocurre en el aula, en casa y con los amigos. Cuando entendemos el contexto, dejamos de preguntar «¿por qué no puede?» y empezamos a preguntar «¿qué podría ayudarle ahora?».</p>
+          </div>
+        </div>
+      </div>
+      <div class="essential-guide" aria-label="Tres ideas para acompañar mejor">
+        <article class="guide-card guide-attention"><span class="guide-number">01</span><span class="guide-label">Atención</span><h3>Volver también es avanzar</h3><p>No siempre hace falta llamar la atención más fuerte. Puede ayudar una instrucción corta, un ejemplo y una señal tranquila para regresar a la tarea.</p><button class="guide-more" type="button" aria-expanded="false" data-guide-answer="Prueba esto: di una sola cosa, pide que la repitan con sus palabras y acuerden una señal para volver sin avergonzar.">Una idea para probar <span aria-hidden="true">+</span></button><p class="guide-answer" aria-live="polite"></p></article>
+        <article class="guide-card guide-organization"><span class="guide-number">02</span><span class="guide-label">Organización</span><h3>Hacerlo visible ayuda</h3><p>Una tarea grande pesa menos cuando se puede ver por partes. Listas, colores, recordatorios y tiempos cortos liberan espacio mental.</p><button class="guide-more" type="button" aria-expanded="false" data-guide-answer="Prueba esto: escribe solo tres pasos, prepara los materiales antes de comenzar y marca cada avance, incluso el más pequeño.">Una idea para probar <span aria-hidden="true">+</span></button><p class="guide-answer" aria-live="polite"></p></article>
+        <article class="guide-card guide-support"><span class="guide-number">03</span><span class="guide-label">Acompañamiento</span><h3>Preguntar antes de suponer</h3><p>En el aula, la familia y la comunidad, acompañar es escuchar sin etiquetas y encontrar una forma de participar que respete el ritmo de cada quien.</p><button class="guide-more" type="button" aria-expanded="false" data-guide-answer="Prueba esto: pregunta «¿qué te ayudaría?» y acuerden una estrategia. Las necesidades pueden cambiar de un día a otro.">Una idea para probar <span aria-hidden="true">+</span></button><p class="guide-answer" aria-live="polite"></p></article>
+      </div>
+    
+
+
+      </section>
+
+    <section class="video-section section character-zone" id="recorrido" aria-labelledby="video-title"><img class="character-decor character-decor-senin" src="imagenes/viejo.png" alt="" aria-hidden="true" loading="lazy"
+      >
+      <div class="container video-layout">
+        <div>
+          <p class="section-number light">01 / mira y escucha</p>
+          <h2 id="video-title">Una historia<br><em>se entiende mejor</em><br>cuando se vive.</h2>
+          <p class="light-copy">Mira esta historia animada sobre TDAH y pon a prueba lo que observas en cada escena.</p>
+          <button class="button button-light" id="video-button" type="button">Ver video de introducción <span aria-hidden="true">▶</span></button>
+        </div>
+        <div class="video-placeholder" aria-label="Video central del proyecto">
+          <div class="video-screen video-screen-real youtube-screen">
+            <div id="main-youtube-player" class="project-video" title="Video principal sobre experiencias con TDAH"><iframe id="main-youtube-fallback" src="https://www.youtube.com/embed/tPKwAcu_vPg?enablejsapi=1&playsinline=1&rel=0" title="Video principal sobre experiencias con TDAH" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+          <span class="video-caption">VIDEO 01 · UNA MIRADA MÁS AMPLIA</span><div class="video-credits"><button class="video-credits-toggle" id="video-credits-toggle" type="button" aria-expanded="false" aria-controls="video-credits-panel"><span>Créditos del video</span><span class="video-credits-icon" aria-hidden="true">+</span></button><div class="video-credits-panel" id="video-credits-panel" hidden><p>Video «cómo es tener TDAH | Fandub» por <a href="https://www.youtube.com/@FalloSinCovers" target="_blank" rel="noopener noreferrer">Fallo</a>.</p><a class="video-credits-link" href="https://youtu.be/tPKwAcu_vPg" target="_blank" rel="noopener noreferrer">Ver en YouTube <span aria-hidden="true">↗</span></a></div></div>
+        </div>
+      </div>
+    
+      <section class="video-quiz" id="video-quiz" aria-labelledby="video-quiz-title">
+        <div class="video-quiz-heading"><div><button class="video-quiz-toggle" id="video-quiz-title" type="button" aria-expanded="false" aria-controls="video-quiz-panel"><span class="video-quiz-toggle-copy"><small>MIRA · PIENSA · RESPONDE</small><strong>Cinco momentos para mirar con atención.</strong></span><span class="video-quiz-toggle-icon" aria-hidden="true">+</span></button></div><p class="video-quiz-intro">Las preguntas se activan al llegar a escenas importantes. Si fallas, tendrás que volver a ver el fragmento para intentarlo otra vez.</p></div>
+        <div class="video-quiz-panel" id="video-quiz-panel" hidden>
+        <div class="video-quiz-progress" role="progressbar" aria-label="Preguntas respondidas correctamente" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span></span></div>
+        <p class="video-quiz-status" id="video-quiz-status" role="status" aria-live="polite">Reproduce el video para descubrir la primera tarjeta. Las preguntas siguientes permanecerán ocultas.</p>
+        <div class="checkpoint-grid" id="checkpoint-grid" aria-live="polite"><article class="checkpoint-card is-locked" data-checkpoint="0" aria-label="Tarjeta 1, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">01</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="1" aria-label="Tarjeta 2, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">02</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="2" aria-label="Tarjeta 3, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">03</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="3" aria-label="Tarjeta 4, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">04</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="4" aria-label="Tarjeta 5, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">05</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article></div>
+              </div>
+      </section>
+
+      <div class="video-layout video-layout-second">
+        <div>
+          <p class="section-number light">01B / mira y escucha</p>
+          <h2 id="video-second-title">Cómo es tener TDAH<br><em>medicado.</em></h2>
+          <p class="light-copy">Observa esta experiencia en primera persona. Las tarjetas aparecen mientras avanzas por el video, igual que en el recorrido anterior.</p>
+        </div>
+        <div class="video-placeholder" aria-label="Segundo video interactivo del proyecto">
+          <div class="video-screen video-screen-real youtube-screen"><div id="secondary-youtube-player" class="project-video" title="Cómo es tener TDAH (medicado) | Fandub Latino"><iframe id="secondary-youtube-fallback" src="https://www.youtube.com/embed/7ZBmm3m8-x0?enablejsapi=1&playsinline=1&rel=0" title="Cómo es tener TDAH (medicado) | Fandub Latino" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
+          <span class="video-caption">VIDEO 02 · CÓMO ES TENER TDAH (MEDICADO)</span>
+          <div class="video-credits"><button class="video-credits-toggle" id="secondary-video-credits-toggle" type="button" aria-expanded="false" aria-controls="secondary-video-credits-panel"><span>Créditos del video</span><span class="video-credits-icon" aria-hidden="true">+</span></button><div class="video-credits-panel" id="secondary-video-credits-panel" hidden><p>Video «Cómo es tener TDAH (medicado) | Fandub Latino» por <a href="https://www.youtube.com/@FalloSinFandub" target="_blank" rel="noopener noreferrer">Fallo!</a>. La obra original corresponde a <a href="https://www.youtube.com/@IceCreamSandwich" target="_blank" rel="noopener noreferrer">Ice Cream Sandwich</a>.</p><a class="video-credits-link" href="https://youtu.be/7ZBmm3m8-x0" target="_blank" rel="noopener noreferrer">Ver fuente en YouTube <span aria-hidden="true">↗</span></a></div></div>
+        </div>
+      </div>
+      <section class="video-quiz video-quiz-second" id="video-quiz-second" aria-labelledby="video-quiz-second-title">
+        <div class="video-quiz-heading"><div><button class="video-quiz-toggle" id="video-quiz-second-title" type="button" aria-expanded="false" aria-controls="video-quiz-second-panel"><span class="video-quiz-toggle-copy"><small>MIRA · PIENSA · RESPONDE</small><strong>Ocho momentos para mirar con atención.</strong></span><span class="video-quiz-toggle-icon" aria-hidden="true">+</span></button></div><p class="video-quiz-intro">Las preguntas se desbloquean mientras avanzas. Si fallas, podrás volver a mirar el fragmento y responder de nuevo.</p></div>
+        <div class="video-quiz-panel" id="video-quiz-second-panel" hidden><div class="video-quiz-progress" id="video-quiz-second-progress" role="progressbar" aria-label="Preguntas respondidas correctamente del segundo video" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><span></span></div><p class="video-quiz-status" id="video-quiz-second-status" role="status" aria-live="polite">Reproduce el segundo video para descubrir la primera tarjeta.</p><div class="checkpoint-grid" id="checkpoint-grid-second" aria-live="polite"><article class="checkpoint-card is-locked" data-checkpoint="0" aria-label="Tarjeta 01, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">01</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="1" aria-label="Tarjeta 02, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">02</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="2" aria-label="Tarjeta 03, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">03</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="3" aria-label="Tarjeta 04, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">04</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="4" aria-label="Tarjeta 05, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">05</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="5" aria-label="Tarjeta 06, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">06</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="6" aria-label="Tarjeta 07, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">07</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article><article class="checkpoint-card is-locked" data-checkpoint="7" aria-label="Tarjeta 08, bloqueada"><div class="checkpoint-lock"><span class="checkpoint-number">08</span><span class="checkpoint-lock-label">Pendiente</span></div><p>Pregunta bloqueada</p><span class="checkpoint-hint">Mira el video para desbloquearla</span></article></div></div>
+      </section>
+</section>
+    <section class="characters section character-zone" id="personajes" aria-labelledby="characters-title"><div class="container">
+        <div class="section-heading-row"><div><p class="section-number">02 / cinco recorridos</p><h2 id="characters-title">Nadie es una sola cosa.</h2></div><p class="heading-aside">Conoce a cinco personajes ficticios. Cada historia representa una acción cognitiva, no una etiqueta.</p></div>
+        <button class="section-collection-toggle" type="button" aria-expanded="false" aria-controls="characters-panel"><span><small>Explorar historias y perfiles</small><strong>Ver los cinco personajes</strong></span><span class="collection-toggle-icon" aria-hidden="true">+</span></button><div class="section-collection-panel" id="characters-panel" hidden><div class="character-grid">
+          <article class="character-card character-lime" data-character="rem"><div class="character-number">01</div><div class="avatar avatar-rem photo-expand-trigger" role="button" tabindex="0" aria-label="Ampliar imagen de Rem" data-photo="imagenes/diaactu1.png" data-photo-name="Rem" style="width:115px;height:115px;min-width:115px;min-height:115px;overflow:hidden;border-radius:50%;flex:0 0 115px;">
+  <picture class="avatar-picture"><source media="(max-width: 650px)" srcset="imagenes/diaactu1.png"><img src="imagenes/diaactu1.png" loading="lazy" decoding="async" width="1728" height="1400" alt="Ilustración de Rem" style="display:block;width:100%;height:100%;max-width:none;object-fit:cover;border-radius:50%;"></picture>
+</div><p class="character-action">Guía de claridad mental</p><h3>Rem</h3><p>Ayuda a dividir las tareas, reconocer lo que se siente y recuperar el enfoque con pasos pequeños.</p><button class="outline-button character-open" type="button" data-id="rem">Abrir historia <span aria-hidden="true">↗</span></button></article>
+          <article class="character-card character-orange" data-character="senin"><div class="character-number">02</div><div class="avatar avatar-senin photo-expand-trigger" role="button" tabindex="0" aria-label="Ampliar imagen de Senin" data-photo="imagenes/viejo.png" data-photo-name="Senin" style="width:115px;height:115px;min-width:115px;min-height:115px;overflow:hidden;border-radius:50%;flex:0 0 115px;">
+  <picture class="avatar-picture"><source media="(max-width: 650px)" srcset="imagenes/viejo.png"><img src="imagenes/viejo.png" loading="lazy" decoding="async" width="1728" height="1400" alt="Ilustración de Senin" style="display:block;width:100%;height:100%;max-width:none;object-fit:cover;border-radius:50%;"></picture>
+</div><p class="character-action">Guía de paciencia y estabilidad</p><h3>Senin</h3><p>Acompaña desde la experiencia: promueve la calma, la comunicación abierta y la flexibilidad.</p><button class="outline-button character-open" type="button" data-id="senin">Abrir historia <span aria-hidden="true">↗</span></button></article>
+          <article class="character-card character-blue" data-character="rot"><div class="character-number">03</div><div class="avatar avatar-rot photo-expand-trigger" role="button" tabindex="0" aria-label="Ampliar imagen de Rot" data-photo="imagenes/viejo-zombie.png" data-photo-name="Rot" style="width:115px;height:115px;min-width:115px;min-height:115px;overflow:hidden;border-radius:50%;flex:0 0 115px;">
+  <picture class="avatar-picture"><source media="(max-width: 650px)" srcset="imagenes/viejo-zombie.png"><img src="imagenes/viejo-zombie.png" loading="lazy" decoding="async" width="1728" height="1400" alt="Ilustración de Rot" style="display:block;width:100%;height:100%;max-width:none;object-fit:cover;border-radius:50%;"></picture>
+</div><p class="character-action">Dispersión y agotamiento mental</p><h3>Rot</h3><p>Representa una mente saturada que salta entre estímulos y necesita comprensión, pausas y apoyos claros.</p><button class="outline-button character-open" type="button" data-id="rot">Abrir historia <span aria-hidden="true">↗</span></button></article>
+          <article class="character-card character-pink" data-character="harper"><div class="character-number">04</div><div class="avatar avatar-harper photo-expand-trigger" role="button" tabindex="0" aria-label="Ampliar imagen de Harper" data-photo="imagenes/harper.png" data-photo-name="Harper" style="width:115px;height:115px;min-width:115px;min-height:115px;overflow:hidden;border-radius:50%;flex:0 0 115px;">
+  <picture class="avatar-picture"><source media="(max-width: 650px)" srcset="imagenes/harper.png"><img src="imagenes/harper.png" loading="lazy" decoding="async" width="1728" height="1400" alt="Ilustración de Harper" style="display:block;width:100%;height:100%;max-width:none;object-fit:cover;border-radius:50%;"></picture>
+</div><p class="character-action">Empatía y resiliencia adolescente</p><h3>Harper</h3><p>Vive los retos escolares en primera persona y convierte la creatividad, la persistencia y la empatía en recursos.</p><button class="outline-button character-open" type="button" data-id="harper">Abrir historia <span aria-hidden="true">↗</span></button></article>
+          <article class="character-card character-violet" data-character="turn"><div class="character-number">05</div><div class="avatar avatar-turn photo-expand-trigger" role="button" tabindex="0" aria-label="Ampliar imagen de Turn" data-photo="imagenes/nino.png" data-photo-name="Turn" style="width:115px;height:115px;min-width:115px;min-height:115px;overflow:hidden;border-radius:50%;flex:0 0 115px;">
+  <picture class="avatar-picture"><source media="(max-width: 650px)" srcset="imagenes/nino.png"><img src="imagenes/nino.png" loading="lazy" decoding="async" width="1728" height="1400" alt="Ilustración de Turn" style="display:block;width:100%;height:100%;max-width:none;object-fit:cover;border-radius:50%;"></picture>
+</div><p class="character-action">Energía y entusiasmo adolescente</p><h3>Turn</h3><p>Explora con energía e ingenio, mientras aprende a manejar la distractibilidad, la impaciencia y el estrés.</p><button class="outline-button character-open" type="button" data-id="turn">Abrir historia <span aria-hidden="true">↗</span></button></article>
+        </div></div>
+      </div>
+    </section>
+    <!-- ESPECIALISTAS: busca "FICHA 1" para sustituir retratos y datos de ejemplo. -->
+    <div class="info-marquee section-marquee" data-marquee-before="especialistas" aria-hidden="true"><div class="info-marquee-track"><span class="marquee-group"><span>✦ Mirar distinto también es acompañar</span><span>•</span><span>Cada paso pequeño cuenta</span><span>•</span><span>Hay muchas formas de aprender</span><span>•</span></span><span class="marquee-group" aria-hidden="true"><span>✦ Mirar distinto también es acompañar</span><span>•</span><span>Cada paso pequeño cuenta</span><span>•</span><span>Hay muchas formas de aprender</span><span>•</span></span></div></div>
+    <section class="experts-section section character-zone" id="especialistas" aria-labelledby="experts-title"><img class="character-decor character-decor-harper" src="imagenes/viejo-zombie.png" alt="" aria-hidden="true" loading="lazy"
+      >
+      <div class="container">
+        <div class="section-heading-row"><div><p class="section-number">03 / voces profesionales</p><h2 id="experts-title">Una red que acompaña.</h2></div><p class="heading-aside">Profesionales de la psicología y la educación aportan conocimiento y perspectiva a esta plataforma.</p></div>
+        <p class="experts-intro">Conoce a las profesionales que aportan experiencia desde la psicología y la educación. Sus perfiles ofrecen contexto y recursos para seguir explorando; no sustituyen una valoración individual.</p><div class="section-cta expert-section-cta"><p>¿Buscas ampliar esta mirada profesional?</p><a class="button button-primary" href="#entrevistas">Escuchar a especialistas <span aria-hidden="true">→</span></a></div>
+        <div class="experts-grid" id="experts-grid">
+          <article class="expert-card" data-search="angie lorena benavides psicóloga clínica psicología ansiedad terapia cognitivo conductual regulación emocional">
+            <div class="expert-photo-placeholder expert-photo-preview photo-expand-trigger" role="button" tabindex="0" aria-label="Ampliar foto de Angie Lorena Benavides" data-photo="imagenes/benav.jpeg" data-photo-name="Angie Lorena Benavides"><img src="imagenes/benav.jpeg" width="500" height="625" loading="lazy" decoding="async" alt="Retrato ilustrativo de muestra para el perfil de Angie Lorena Benavides"></div>
+            <div class="expert-info"><p class="expert-tag">PERFIL 01 · PSICOLOGÍA CLÍNICA</p><h3>Angie Lorena Benavides</h3><p><strong>Psicóloga clínica</strong></p><button class="content-expand-button expert-details-toggle" type="button" aria-expanded="false" aria-controls="expert-details-angie">Ver información del perfil <span aria-hidden="true">+</span></button><div class="expert-details expandable-content" id="expert-details-angie" hidden><p>Más de 10 años de experiencia en evaluación e intervención psicológica en dificultades emocionales, conductuales y trastornos de salud mental. Acompaña desde una perspectiva cognitivo-conductual para promover el bienestar y la calidad de vida, con experiencia en ansiedad, regulación emocional y comportamiento.</p><div class="expert-contact-block"><span class="expert-contact-label">Contacto profesional</span><p class="expert-contact"><a href="tel:+573247477292">+57 324 747 7292</a><a href="mailto:AngieBenavides.psicologa@gmail.com">AngieBenavides.psicologa@gmail.com</a></p></div><div class="expert-socials" aria-label="Redes sociales de Angie Lorena Benavides"><span class="expert-socials-label">Redes sociales</span><div class="expert-social-links"><a class="expert-social-link social-instagram" href="https://www.instagram.com/psicologaangiebenavidesv?vrfl=ajJ3ZnIycTNzdDNi&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Angie Lorena Benavides"><span class="expert-social-icon"></span><span>Instagram</span><span class="expert-social-arrow" aria-hidden="true">↗</span></a><a class="expert-social-link social-tiktok" href="https://www.tiktok.com/@psicologaangiebenavidesv?_r=1&_t=ZS-9Anl4VQI3cM" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Angie Lorena Benavides"><span class="expert-social-icon"></span><span>TikTok</span><span class="expert-social-arrow" aria-hidden="true">↗</span></a><a class="expert-social-link social-youtube" href="https://youtube.com/@angiebenavides.psicologa?si=DOmVjvZFVLN3KMB_" target="_blank" rel="noopener noreferrer" aria-label="YouTube de Angie Lorena Benavides"><span class="expert-social-icon" aria-hidden="true"></span><span>YouTube</span><span class="expert-social-arrow" aria-hidden="true">↗</span></a></div></div></div></div>
+          </article>
+          <article class="expert-card" data-search="hellen yurani zamudio ceballos diseñadora gráfica docente universitaria diseño visual educación universidad antonio josé camacho">
+            <div class="expert-photo-placeholder expert-photo-preview photo-expand-trigger" role="button" tabindex="0" aria-label="Ampliar foto de Hellen Yurani Zamudio Ceballos" data-photo="imagenes/hellen.jpg" data-photo-name="Hellen Yurani Zamudio Ceballos"><img src="imagenes/hellen.jpg" width="500" height="625" loading="lazy" decoding="async" alt="Retrato ilustrativo de muestra para el perfil de Hellen Yurani Zamudio Ceballos"></div>
+            <div class="expert-info"><p class="expert-tag">PERFIL 02 · DISEÑO Y EDUCACIÓN</p><h3>Hellen Yurani Zamudio Ceballos</h3><p><strong>Diseñadora gráfica y docente universitaria</strong></p><button class="content-expand-button expert-details-toggle" type="button" aria-expanded="false" aria-controls="expert-details-hellen">Ver información del perfil <span aria-hidden="true">+</span></button><div class="expert-details expandable-content" id="expert-details-hellen" hidden><p>Docente del programa de Diseño Visual, con formación de posgrado en diseño y creación interactiva. Tiene experiencia en la Universidad de Pamplona, la Universidad de Investigación y Desarrollo (UDI), la Universidad Santiago de Cali y la Universidad Antonio José Camacho. Se especializa en metodologías activas y herramientas digitales para el aprendizaje. Promueve la formación integral, la equidad en el aula y el acompañamiento constante al estudiante.</p><p><strong>Universidad Antonio José Camacho</strong></p><div class="expert-contact-block"><span class="expert-contact-label">Contacto profesional</span><p class="expert-contact"><a href="mailto:hzamudio@profesores.uniajc.edu.co">hzamudio@profesores.uniajc.edu.co</a></p></div><div class="expert-socials" aria-label="Red social de Hellen Yurani Zamudio Ceballos"><span class="expert-socials-label">Red social</span><div class="expert-social-links"><a class="expert-social-link social-linkedin" href="https://www.linkedin.com/public-profile/settings/?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_public_profile%3B4A4y9GzOQOG09Q%2BUx9tmhQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Hellen Yurani Zamudio Ceballos"><span class="expert-social-icon" aria-hidden="true"></span><span>Linked</span><span class="expert-social-arrow" aria-hidden="true">↗</span></a></div></div></div></div>
+          </article>
+        <div class="recommendations-panel"><p class="section-number">Herramientas de acompañamiento</p><h3>Recomendación destacada</h3><p class="recommendations-note">Orientaciones educativas basadas en el documento del proyecto. No sustituyen una valoración ni una atención profesional.</p><div class="recommendations-grid"><article><h4>Para consultar</h4><p>Busca orientación en fuentes verificables como la <a href="https://www.clinicaani.com" target="_blank" rel="noopener noreferrer">Clínica ANI</a>, la <a href="https://www.adhd-federation.org" target="_blank" rel="noopener noreferrer">World Federation of ADHD</a> y contenidos de <a href="https://www.rtve.es" target="_blank" rel="noopener noreferrer">RTVE</a>. Confirma siempre el alcance de cada servicio.</p><div class="expandable-content" id="recommendation-sources" hidden><p>El documento diferencia entre información educativa, experiencias personales y valoración profesional. Una publicación en redes puede servir para abrir una conversación, pero no confirma por sí sola un diagnóstico ni reemplaza una consulta.</p><p>La Clínica ANI y la World Federation of ADHD aparecen como referencias del documento; RTVE aporta contenidos de divulgación audiovisual. Antes de solicitar un servicio, revisa directamente su sitio oficial, el alcance de la atención y la población a la que va dirigida.</p></div><button class="content-expand-button" type="button" aria-expanded="false" aria-controls="recommendation-sources">Ver fuentes y contexto <span aria-hidden="true">+</span></button></article></div></div>
+                </div><p class="expert-empty" id="expert-empty" hidden>No encontramos perfiles que coincidan.</p>
+
+      </div>
+    </section>
+    <!-- ENTREVISTAS: se incorporan los dos enlaces de YouTube proporcionados. -->
+    <section class="interviews-section section character-zone" id="entrevistas" aria-labelledby="interviews-title"><img class="character-decor character-decor-extra-harper" src="imagenes/harper.png" alt="" aria-hidden="true" loading="lazy"><div class="container"><div class="section-heading-row"><div><p class="section-number">04 / conversaciones</p><h2 id="interviews-title">Entrevistas con especialistas.</h2></div><p class="heading-aside">Conversaciones que acercan distintas experiencias y miradas profesionales.</p></div><div class="interviews-grid">
+      <article class="interview-card"><div class="interview-video-frame"><iframe src="https://www.youtube.com/embed/qbpHHRG28fI" title="TDAH: voces y experiencias | Entrevista de grupo focal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div><p class="expert-tag">ENTREVISTA 01 · EXPERIENCIAS</p><h3>TDAH: voces y experiencias</h3><p>Entrevista de grupo focal que reúne distintas voces para conversar sobre cómo se vive el TDAH, qué apoyos hacen la diferencia y por qué escuchar las experiencias personales ayuda a comprender sin generalizar.</p><div class="expandable-content" id="interview-group" hidden><p>La conversación pone en primer plano las experiencias y percepciones de quienes conviven con el TDAH. Sus aportes permiten reconocer necesidades diversas y abrir un diálogo más empático sobre atención, organización y acompañamiento.</p></div><button class="content-expand-button" type="button" aria-expanded="false" aria-controls="interview-group">Explorar la conversación <span aria-hidden="true">+</span></button></div></article>
+      <article class="interview-card"><div class="interview-video-frame"><iframe src="https://www.youtube.com/embed/bx7YAcIUaU8" title="¿Y si no es falta de atención? Hablemos de TDAH con Angie Benavidez" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div><p class="expert-tag">ENTREVISTA 02 · PSICOLOGÍA CLÍNICA</p><h3>¿Y si no es falta de atención?</h3><p>Conversación con Angie Benavidez sobre TDAH, atención y las formas de mirar lo que ocurre más allá de la idea de “falta de atención”.</p><div class="expandable-content" id="interview-angie" hidden><p>La entrevista invita a cuestionar las etiquetas rápidas y a comprender el contexto de cada persona. La mirada profesional ayuda a conversar sobre evaluación, acompañamiento y estrategias sin convertir una experiencia en un diagnóstico.</p></div><button class="content-expand-button" type="button" aria-expanded="false" aria-controls="interview-angie">Explorar la conversación <span aria-hidden="true">+</span></button></div></article>
+      <article class="interview-card"><div class="interview-video-frame"><iframe src="https://www.youtube.com/embed/peWO6HmYpZs" title="TDAH en el aula: la experiencia de una docente | Hellen Zamudio" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div><p class="expert-tag">ENTREVISTA 03 · EXPERIENCIA DOCENTE</p><h3>TDAH en el aula: la experiencia de una docente</h3><p>Conversación con Hellen Zamudio sobre la experiencia de acompañar el TDAH en el aula, los retos cotidianos y los apoyos que pueden favorecer una participación más comprensiva.</p><div class="expandable-content" id="interview-hellen" hidden><p>La entrevista acerca la mirada de una docente sobre las dinámicas escolares y la importancia de reconocer distintas formas de aprender. Sus experiencias ayudan a pensar en estrategias concretas, comunicación clara y acompañamiento sin reducir a ningún estudiante a una etiqueta.</p></div><button class="content-expand-button" type="button" aria-expanded="false" aria-controls="interview-hellen">Explorar la conversación <span aria-hidden="true">+</span></button></div></article>
+    </div></div></section>
+    <div class="info-marquee section-marquee" aria-hidden="true"><div class="info-marquee-track"><span class="marquee-group"><span>✦ Escuchar también es acompañar</span><span>•</span><span>Cada historia merece ser comprendida</span><span>•</span><span>La curiosidad abre conversaciones</span><span>•</span></span><span class="marquee-group" aria-hidden="true"><span>✦ Escuchar también es acompañar</span><span>•</span><span>Cada historia merece ser comprendida</span><span>•</span><span>La curiosidad abre conversaciones</span><span>•</span></span></div></div>
+    <section class="blog section character-zone" id="blog" aria-labelledby="blog-title"><img class="character-decor character-decor-turn" src="imagenes/nino.png" alt="" aria-hidden="true" loading="lazy"
+      >
+      <div class="container"><div class="section-heading-row"><div><p class="section-number">05 / ideas para compartir</p><h2 id="blog-title">Notas para llevar<br><em>a la conversación.</em></h2></div><div class="filter-group" role="group" aria-label="Filtrar artículos"><button class="filter-button active" data-filter="todos">Todos</button><button class="filter-button" data-filter="aula">Aula</button><button class="filter-button" data-filter="familia">Familia</button><button class="filter-button" data-filter="comunidad">Comunidad</button></div></div>
+        <div class="article-grid">
+          <article class="article-card" data-category="aula"><div class="article-image image-aula"><img src="imagenes/aula.png" alt="Ilustración relacionada con el TDAH en el aula"></div><div class="article-meta">AULA · 4 MIN DE LECTURA</div><h3>Cuando “pon atención” no alcanza</h3><p>Instrucciones claras, tareas por partes y pausas pueden convertir una exigencia confusa en un apoyo concreto.</p><a href="#" class="read-link article-open" data-title="Cuando “pon atención” no alcanza" data-text="El documento propone adaptar los apoyos a cada estudiante. En el aula, usa instrucciones breves, divide las tareas grandes, acuerda pausas y reduce distractores cuando sea posible. La meta no es exigir una única forma de aprender, sino abrir caminos para participar.">Leer nota <span aria-hidden="true">→</span></a><div class="expandable-content" id="note-classroom" hidden><p>La atención no se sostiene solamente con repetir una orden. Puede ayudar presentar una instrucción de un solo paso, pedir que se repita con sus palabras y dejar visible el siguiente objetivo.</p><p>También conviene separar el inicio, el desarrollo y el cierre de una actividad. Un temporizador, una lista corta, un ejemplo resuelto o una señal acordada pueden facilitar el regreso a la tarea sin avergonzar a nadie.</p></div><button class="content-expand-button" type="button" aria-expanded="false" aria-controls="note-classroom">Ampliar esta nota <span aria-hidden="true">+</span></button></article>
+          <article class="article-card" data-category="familia"><div class="article-image image-familia"><img src="imagenes/familia.png" alt="Ilustración relacionada con el acompañamiento familiar"></div><div class="article-meta">FAMILIA · 5 MIN DE LECTURA</div><h3>Escuchar antes de corregir</h3><p>Comprender el contexto y reconocer la diversidad cognitiva ayuda a acompañar sin etiquetas.</p><a href="#" class="read-link article-open" data-title="Escuchar antes de corregir" data-text="El TDAH no se manifiesta de la misma manera en todas las personas. Antes de asumir desinterés, pregunta qué está dificultando la tarea, acuerda rutinas posibles y reconoce los avances. Escuchar con curiosidad ayuda a reducir el estigma y fortalece el acompañamiento.">Leer nota <span aria-hidden="true">→</span></a><div class="expandable-content" id="note-home" hidden><p>El documento recuerda que el TDAH no se manifiesta igual en todas las personas. Una conducta puede tener causas distintas según el momento, el ambiente, el cansancio, la tarea o la forma en que se comunicó la instrucción.</p><p>Antes de etiquetar, pregunta qué ocurrió y qué apoyo sería útil. Reconocer los avances, acordar rutinas flexibles y evitar comparaciones puede fortalecer la autoestima y la disposición para pedir ayuda.</p></div><button class="content-expand-button" type="button" aria-expanded="false" aria-controls="note-home">Ampliar esta nota <span aria-hidden="true">+</span></button></article>
+<article class="article-card" data-category="comunidad">
+  <div class="article-image image-comunidad">
+    <img
+      src="imagenes/comunidad.png"
+      alt="Ilustración relacionada con la comunidad y el acompañamiento"
+    >
+  
+  </div>
+
+  <div class="article-meta">COMUNIDAD · 4 MIN DE LECTURA</div>
+
+  <h3>El acompañamiento también cuenta</h3>
+
+  <p>
+    La inclusión se construye entre compañeros, docentes y familias: comprender, adaptar y ofrecer apoyo también es aprender en comunidad.
+  </p>
+
+  <a
+    href="#"
+    class="read-link article-open"
+    data-title="El acompañamiento también cuenta"
+    data-text="En la comunidad, el acompañamiento se vuelve una responsabilidad compartida. Docentes, amistades, familias y espacios culturales pueden ofrecer información clara, normas de respeto, distintas formas de participar y oportunidades para pedir ayuda. La inclusión no significa hacer todo igual: significa quitar barreras innecesarias."
+  >
+    Leer nota <span aria-hidden="true">→</span>
+  </a>
+ <div class="expandable-content" id="note-community" hidden><p>La inclusión se construye entre compañeros, docentes, familias y organizaciones. Compartir información clara, ofrecer distintas formas de participar y mantener normas de respeto ayuda a reducir el estigma.</p><p>En una experiencia transmedia, cada medio puede cumplir una función: el video muestra situaciones, las entrevistas incorporan voces, las redes acercan contenidos breves y las actividades invitan a participar. El recorrido debe ser accesible y permitir que cada persona explore a su propio ritmo.</p></div><button class="content-expand-button" type="button" aria-expanded="false" aria-controls="note-community">Ampliar esta nota <span aria-hidden="true">+</span></button></article>
+        </div>
+      </div>
+    </section>
+
+    <div class="info-marquee section-marquee" data-marquee-before="galeria" aria-hidden="true"><div class="info-marquee-track"><span class="marquee-group"><span>✦ Las historias conectan perspectivas</span><span>•</span><span>Una conversación, muchas voces</span><span>•</span><span>Cada mirada suma</span><span>•</span></span><span class="marquee-group" aria-hidden="true"><span>✦ Las historias conectan perspectivas</span><span>•</span><span>Una conversación, muchas voces</span><span>•</span><span>Cada mirada suma</span><span>•</span></span></div></div>
+    <section class="photo-carousel-section section character-zone" id="galeria" aria-labelledby="galeria-title"><img class="character-decor character-decor-extra-senin" src="imagenes/viejo.png" alt="" aria-hidden="true" loading="lazy">
+      <div class="container">
+        <div class="section-heading-row carousel-heading">
+          <div>
+            <p class="section-number">06 / galería visual</p>
+            <h2 id="galeria-title">Seis miradas,<br><em>una misma conversación.</em></h2>
+          </div>
+          <p class="heading-aside">Desplázate por las imágenes del proyecto usando las flechas o los indicadores inferiores.</p>
+        </div>
+
+        <div class="photo-carousel" data-carousel aria-label="Galería de fotografías del proyecto">
+          <div class="carousel-viewport">
+            <div class="carousel-track" data-carousel-track>
+              <figure class="carousel-slide is-active">
+                <img src="imagenes/tdah_colegio.png" alt="Ilustración sobre el TDAH en el aula">
+                <figcaption><span>01</span> Aprender también es encontrar una forma propia.</figcaption>
+              </figure>
+              <figure class="carousel-slide">
+                <img src="imagenes/tdah_familia.png" alt="Ilustración sobre el acompañamiento familiar">
+                <figcaption><span>02</span> Escuchar antes de corregir cambia la conversación.</figcaption>
+              </figure>
+              <figure class="carousel-slide">
+                <img src="imagenes/tdah_amigos.png" alt="Ilustración sobre comunidad y acompañamiento">
+                <figcaption><span>03</span> La comunidad puede convertirse en una red de apoyo.</figcaption>
+              </figure>
+              <figure class="carousel-slide">
+                <img src="imagenes/tdah_deporte.png" alt="Ilustración del personaje Rem">
+                <figcaption><span>04</span> La curiosidad también puede abrir caminos.</figcaption>
+              </figure>
+              <figure class="carousel-slide">
+                <img src="imagenes/tdah_trabajo.png" alt="Ilustración del personaje Harper">
+                <figcaption><span>05</span> Hacer visible lo importante ayuda a avanzar.</figcaption>
+              </figure>
+              <figure class="carousel-slide">
+                <img src="imagenes/tdah_fiesta.png" alt="Ilustración del personaje Turn">
+                <figcaption><span>06</span> Participar puede tener más de una forma.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <button class="carousel-button carousel-prev" type="button" data-carousel-prev aria-label="Fotografía anterior"><span class="carousel-control-icon" aria-hidden="true"></span></button>
+          <button class="carousel-button carousel-next" type="button" data-carousel-next aria-label="Fotografía siguiente"><span class="carousel-control-icon" aria-hidden="true"></span></button>
+          <div class="carousel-bottom">
+            <div class="carousel-dots" data-carousel-dots aria-label="Seleccionar fotografía"></div>
+            <span class="carousel-counter" data-carousel-counter>01 / 06</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="minigames section character-zone" id="minijuegos" aria-labelledby="minigames-title"><img class="character-decor character-decor-extra-turn" src="imagenes/nino.png" alt="" aria-hidden="true" loading="lazy">
+      <div class="container">
+        <div class="section-heading-row minigames-heading">
+          <div><p class="section-number">07 / herramientas para practicar</p><h2 id="minigames-title">Pequeños retos,<br><em>grandes avances.</em></h2></div>
+          <p class="heading-aside">Actividades breves para practicar memoria de trabajo, expresión visual y atención flexible. Son recursos educativos, no herramientas de diagnóstico.</p>
+        </div>
+        <button class="section-collection-toggle" type="button" aria-expanded="false" aria-controls="minigames-panel"><span><small>3 retos para practicar a tu ritmo</small><strong>Abrir minijuegos</strong></span><span class="collection-toggle-icon" aria-hidden="true">+</span></button><div class="section-collection-panel" id="minigames-panel" hidden><div class="minigame-grid">
+          <article class="mini-game-card mini-game-focus">
+            <span class="mini-game-tag">Reto 01 · memoria de trabajo</span>
+            <h3>Recuerda el patrón</h3>
+            <p>Observa la secuencia de luces y repítela haciendo clic en los cuadros.</p>
+            <div class="mini-game-area" id="memory-game" aria-live="polite"></div>
+            <button class="outline-button mini-game-reset" type="button" data-game="memory">Nuevo patrón</button>
+          </article>
+
+          <article class="mini-game-card mini-game-drawing">
+            <span class="mini-game-tag">Reto 02 · expresión visual</span>
+            <h3>Dibuja tu idea</h3>
+            <p>Usa el mouse para dibujar una forma, una emoción o una idea que quieras compartir.</p>
+            <div class="drawing-toolbar" role="group" aria-label="Herramientas de dibujo">
+              <label for="drawing-color">Color <input id="drawing-color" type="color" value="#3d3d3d"></label>
+              <label for="drawing-size">Trazo <input id="drawing-size" type="range" min="2" max="18" value="5"></label>
+              <button class="drawing-clear" id="drawing-clear" type="button">Limpiar</button>
+            </div>
+            <canvas id="drawing-canvas" class="drawing-canvas" width="640" height="300" aria-label="Lienzo para dibujar con el mouse"></canvas>
+            <p class="drawing-status" id="drawing-status" aria-live="polite">El lienzo está listo.</p>
+          </article>
+
+          <article class="mini-game-card mini-game-challenge">
+            <span class="mini-game-tag">Reto 03 · atención flexible</span>
+            <h3>Misión foco</h3>
+            <p>Encuentra los símbolos de la secuencia sin distraerte con los demás. Cada ronda aumenta el reto.</p>
+            <div class="mini-game-area" id="focus-challenge" aria-live="polite"></div>
+            <button class="outline-button mini-game-reset" type="button" data-game="challenge">Nueva misión</button>
+          </article>
+                  </div></div>
+      </div>
+    </section>
+
+    <div class="info-marquee section-marquee" data-marquee-before="encuestas" aria-hidden="true"><div class="info-marquee-track"><span class="marquee-group"><span>✦ Tu experiencia importa</span><span>•</span><span>Explora con calma</span><span>•</span><span>No hay una sola manera de vivirlo</span><span>•</span></span><span class="marquee-group" aria-hidden="true"><span>✦ Tu experiencia importa</span><span>•</span><span>Explora con calma</span><span>•</span><span>No hay una sola manera de vivirlo</span><span>•</span></span></div></div>
+    <section class="tdah-survey section" id="encuestas" aria-labelledby="survey-title">
+      <div class="survey-shell">
+        <div class="survey-heading"><p class="section-number">08 / conócete mejor</p><h2 id="survey-title">Una pausa para <em>mirar tu experiencia.</em></h2><p>Responde pensando en los últimos seis meses. Esta actividad es orientativa y no diagnostica TDAH: solo un profesional puede realizar una evaluación.</p></div>
+        <div class="survey-layout"><form id="tdah-survey" class="survey-form"><div class="survey-progress"><span id="survey-progress-bar"></span></div><p class="survey-progress-label" id="survey-progress-label">Pregunta 1 de 8</p><div id="survey-questions"></div><div class="survey-actions"><button type="button" class="outline-button" id="survey-prev" disabled>Anterior</button><button type="button" class="button" id="survey-next">Siguiente</button></div></form>
+        <aside class="survey-result" aria-live="polite"><h3>Tu mapa personal</h3><p id="survey-result-intro">Completa las preguntas para descubrir tu gráfico.</p><div class="radar-wrap"><canvas id="survey-radar" width="720" height="570" role="img" tabindex="0" aria-label="Mapa personal tipo telaraña. Usa las flechas para recorrer las dimensiones y activar para ver el detalle.">El mapa personal se dibujará aquí.</canvas><div class="radar-legend" id="radar-legend" role="group" aria-label="Explorar dimensiones del mapa"></div><p class="survey-chart-detail" id="survey-chart-detail" aria-live="polite">Responde para ver cómo se dibuja tu mapa. Selecciona una dimensión para explorarla.</p></div><div class="survey-score" id="survey-score">—<small>resultado orientativo</small></div><button type="button" class="visit-download-button" id="survey-download" disabled>↓ Descargar mi resultado</button><p class="survey-disclaimer">No sustituye una consulta, diagnóstico ni tratamiento. Si algo te preocupa, conversa con un profesional de salud.</p></aside></div>
+      </div>
+    </section>
+    <section class="socials section character-zone" id="redes" aria-labelledby="socials-title"><img class="character-decor character-decor-extra-rem" src="imagenes/diaactu1.png" alt="" aria-hidden="true" loading="lazy">
+      <div class="container socials-inner">
+        <div><p class="section-number">09 / sigamos en contacto</p><h2 id="socials-title">La conversación<br><em>continúa en redes.</em></h2></div>
+        <div class="social-grid">
+          <!-- Facebook -->
+          <a class="social-card social-facebook" href="https://www.facebook.com/profile.php?id=61594085487904" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon-wrapper" aria-hidden="true">
+              <img src="imagenes/facebook.png" alt="" class="social-img">
+            </span>
+            <span><strong>Facebook</strong><small>Comparte y conversa</small></span>
+            <span class="social-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <!-- Instagram -->
+          <a class="social-card social-instagram" href="https://www.instagram.com/hibrybrain/" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon-wrapper" aria-hidden="true">
+              <img src="imagenes/rere.png" alt="" class="social-img">
+            </span>
+            <span><strong>Instagram</strong><small>Descubre nuestras historias</small></span>
+            <span class="social-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <!-- TikTok -->
+          <a class="social-card social-tiktok" href="https://www.tiktok.com/@hibrydbrain" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon-wrapper" aria-hidden="true">
+              <img src="imagenes/tik tok.png" alt="" class="social-img">
+            </span>
+            <span><strong>TikTok</strong><small>Aprende en movimiento</small></span>
+            <span class="social-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+
+      </div>
+    
+        </section>
+      </div>
+    </section>
+    <section class="visit-dashboard" id="estadisticas-visitas" aria-labelledby="visit-dashboard-title">
+      <div class="visit-dashboard-inner">
+        <header class="visit-dashboard-heading"><p class="section-number">Nuestra comunidad · datos de visitas</p><h2 id="visit-dashboard-title">Cada visita nos inspira <em>a seguir creciendo.</em></h2><p class="visit-motivation">“Gracias por ser parte de esta conversación: cada persona que nos visita ayuda a que más familias aprendan y comprendan.”</p></header>
+      </div>
+    </section>
+  </main>
+  </main>
+
+  <div class="info-marquee info-marquee-bottom" aria-hidden="true"><div class="info-marquee-track"><span class="marquee-group"><span>✦ Cada mente tiene su propio ritmo</span><span>•</span><span>Preguntar también es acompañar</span><span>•</span><span>Tu voz tiene un lugar</span><span>•</span></span><span class="marquee-group" aria-hidden="true"><span>✦ Cada mente tiene su propio ritmo</span><span>•</span><span>Preguntar también es acompañar</span><span>•</span><span>Tu voz tiene un lugar</span><span>•</span></span></div></div>
+    <footer class="site-footer"><div class="container footer-inner"><div class="brand footer-brand"></div><p>Una propuesta transmedia para aprender a acompañar.</p><p class="footer-small">Proyecto educativo · 2027 · Información orientativa, no diagnóstica.</p><p class="footer-rights">© 2027 Todos los derechos reservados.<br><span>Creado por <a href="creadores.html">Carlos Andres España Angulo</a> y <a href="creadores.html">Jhinsen Davan Castillo Castaño</a>.</span></p></div></footer>
+
+  <div class="modal" id="story-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-backdrop" data-close="true"></div><div class="modal-panel"><button class="modal-close" type="button" data-close="true" aria-label="Cerrar ventana">×</button><p class="section-number" id="modal-kicker">historia</p><h2 id="modal-title">Título</h2><p id="modal-text"></p><div class="modal-tip"><strong>Para acompañar:</strong><span id="modal-tip-text"></span></div><div class="modal-hook" id="modal-hook"></div><div class="story-navigation" id="story-navigation" aria-label="Explorar la historia conectada"><button type="button" class="story-nav-button" id="story-prev">← Anterior</button><span id="story-progress">Personaje 1 de 5</span><button type="button" class="story-nav-button" id="story-next">Siguiente →</button></div></div></div>
+  <div class="modal photo-modal" id="photo-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="photo-modal-title"><div class="modal-backdrop" data-close="true"></div><div class="photo-modal-panel"><button class="modal-close" type="button" data-close="true" aria-label="Cerrar imagen ampliada">×</button><p class="section-number">vista ampliada</p><h2 id="photo-modal-title">Personaje</h2><div class="photo-modal-frame"><img id="photo-modal-image" src="" alt=""></div><p class="photo-modal-hint">Toca o haz clic fuera de la imagen para cerrar.</p></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
+  <script src="script.js"></script>
+</body>
+</html>

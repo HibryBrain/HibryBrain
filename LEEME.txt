@@ -1,0 +1,25 @@
+OTRA FORMA DE MIRAR — PROYECTO EDUCATIVO SOBRE EL TDAH
+
+Cómo abrir el proyecto:
+
+1. Descarga el archivo ZIP.
+2. Descomprímelo en tu computador.
+3. Abre Visual Studio Code.
+4. Selecciona Archivo > Abrir carpeta y elige la carpeta descomprimida.
+5. Abre index.html en tu navegador.
+
+Archivos incluidos:
+
+- index.html: estructura y contenido de la página.
+- styles.css: diseño visual, colores, tipografías y adaptación para celulares.
+- script.js: navegación, ventanas de personajes, filtros del blog, alto contraste y minijuego.
+
+Para agregar el video:
+
+Busca en index.html el texto “Inserta aquí tu video”. Puedes reemplazar el bloque .video-screen por un elemento <video controls> o por un iframe de YouTube.
+
+La página funciona sin instalar dependencias ni ejecutar un servidor. Las tipografías se cargan desde Google Fonts cuando hay conexión a internet; si no hay conexión, se utilizan fuentes alternativas del sistema.
+
+Nota educativa:
+
+El contenido tiene fines de sensibilización y educación. No realiza diagnósticos, no reemplaza una valoración profesional y no presenta el minijuego como tratamiento o prueba de atención.
