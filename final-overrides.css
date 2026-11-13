@@ -1,0 +1,108 @@
+
+/* V8: rediseño real de encuestas y mapa personal */
+.page-encuestas .tdah-survey { background:linear-gradient(135deg,#fff 0%,#f7f7f7 58%,#ffda37 220%); }
+.page-encuestas .survey-heading { position:relative; padding:clamp(1.4rem,3vw,2.4rem); border-radius:30px; background:#fff; border:1px solid #e4e4e4; box-shadow:0 14px 32px rgba(61,61,61,.08); }
+.page-encuestas .survey-heading::after { content:'✦'; position:absolute; right:6%; top:16%; color:#ffda37; font-size:clamp(2.2rem,5vw,4.5rem); animation:surveySpark 3s ease-in-out infinite; }
+.survey-trust-line { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:1.2rem; }
+.survey-trust-line span { padding:.48rem .7rem; border-radius:999px; background:#f3f3f3; color:#676767; font-size:.72rem; font-weight:700; }
+.survey-extra-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:0 0 1.5rem; }
+.survey-extra-card { position:relative; min-height:170px; padding:1.3rem; overflow:hidden; border-radius:22px; border:1px solid transparent; box-shadow:0 9px 22px rgba(61,61,61,.07); transition:transform .3s ease,box-shadow .3s ease; }
+.survey-extra-card:hover { transform:translateY(-6px) rotate(-.5deg); box-shadow:0 17px 28px rgba(61,61,61,.14); }
+.survey-extra-card::after { content:''; position:absolute; right:-25px; bottom:-35px; width:110px; height:110px; border:2px solid currentColor; border-radius:50%; opacity:.22; }
+.survey-extra-card > span { font:800 .72rem 'Space Grotesk',sans-serif; letter-spacing:.12em; }
+.survey-extra-card h3 { margin:.8rem 0 .45rem; font-size:1.25rem; letter-spacing:-.03em; }
+.survey-extra-card p { margin:0; color:#5f5f5f; font-size:.82rem; line-height:1.5; }
+.survey-extra-yellow { background:#ffda37; color:#3d3d3d; }
+.survey-extra-gray { background:#e8e8e8; color:#3d3d3d; }
+.survey-extra-outline { background:#fff; color:#3d3d3d; border-color:#d3d3d3; }
+.survey-map-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:.7rem; }
+.survey-map-heading h3 { margin:.2rem 0 0; }
+.survey-map-kicker { color:#a76b00; font-size:.68rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+.survey-map-status { padding:.38rem .58rem; border-radius:999px; background:#f2f2f2; color:#707070; font-size:.66rem; font-weight:800; white-space:nowrap; }
+.radar-wrap { position:relative; border:1px solid #e0e0e0; box-shadow:inset 0 1px 0 #fff,0 10px 24px rgba(61,61,61,.07); }
+.radar-orbit-label { position:absolute; z-index:2; left:50%; top:47%; transform:translate(-50%,-50%); display:grid; place-items:center; width:60px; height:60px; border:1px solid rgba(61,61,61,.15); border-radius:50%; background:rgba(255,255,255,.78); color:#777; font:700 .63rem 'Space Grotesk',sans-serif; letter-spacing:.06em; text-transform:uppercase; pointer-events:none; animation:mapCorePulse 2.8s ease-in-out infinite; }
+.survey-map-actions { display:flex; align-items:center; justify-content:space-between; gap:.7rem; margin:.35rem 0 .9rem; color:#787878; font-size:.7rem; }
+.survey-replay { padding:.5rem .75rem; border:1px solid #c9a900; border-radius:999px; background:transparent; color:#8b6500; font:800 .72rem 'DM Sans',sans-serif; cursor:pointer; transition:transform .25s,background .25s; }
+.survey-replay:hover { transform:translateY(-2px); background:#ffda37; }
+@keyframes surveySpark { 50% { transform:translateY(-7px) rotate(12deg) scale(1.12); } }
+@keyframes mapCorePulse { 50% { box-shadow:0 0 0 7px rgba(255,218,55,.18); transform:translate(-50%,-50%) scale(1.06); } }
+/* En minijuegos queda una sola figura decorativa en la parte superior. */
+.page-minijuegos .page-character-2 { display:none !important; }
+.page-minijuegos .page-character-1 { opacity:.075; }
+/* La dificultad de dibujo se percibe como un control de herramienta claro. */
+.drawing-color-control { display:grid; grid-template-columns:auto minmax(120px,1fr); align-items:center; gap:.45rem .7rem; }
+.drawing-color-control select { min-width:0; padding:.45rem .6rem; border:1px solid #c8c8c8; border-radius:10px; background:#fff; color:#3d3d3d; font:700 .72rem 'DM Sans',sans-serif; }
+@media (max-width:900px) { .survey-extra-grid { grid-template-columns:1fr 1fr; } .survey-extra-card:last-child { grid-column:1/-1; } }
+@media (max-width:650px) { .page-encuestas .survey-heading { padding:1.1rem; border-radius:22px; } .survey-extra-grid { grid-template-columns:1fr; } .survey-extra-card:last-child { grid-column:auto; } .survey-extra-card { min-height:0; } .survey-map-actions { align-items:flex-start; flex-direction:column; } .radar-orbit-label { width:48px; height:48px; font-size:.55rem; } .drawing-color-control { grid-template-columns:1fr; } }
+body.dark-mode .page-encuestas .tdah-survey, body.dark-theme .page-encuestas .tdah-survey { background:linear-gradient(135deg,#171717 0%,#242424 62%,#4d431c 170%); }
+body.dark-mode .page-encuestas .survey-heading, body.dark-theme .page-encuestas .survey-heading { background:#242424; border-color:#555; }
+body.dark-mode .survey-trust-line span, body.dark-theme .survey-trust-line span { background:#343434; color:#ddd; }
+body.dark-mode .survey-extra-gray, body.dark-theme .survey-extra-gray { background:#303030; color:#f5f5f5; }
+body.dark-mode .survey-extra-outline, body.dark-theme .survey-extra-outline { background:#242424; color:#f5f5f5; border-color:#555; }
+body.dark-mode .survey-extra-card p, body.dark-theme .survey-extra-card p { color:#d0d0d0; }
+body.dark-mode .survey-map-status, body.dark-theme .survey-map-status { background:#383838; color:#ddd; }
+body.dark-mode .radar-orbit-label, body.dark-theme .radar-orbit-label { background:rgba(36,36,36,.84); color:#ddd; border-color:#666; }
+body.dark-mode .radar-wrap, body.dark-theme .radar-wrap { border-color:#555; }
+body.dark-mode .drawing-color-control select, body.dark-theme .drawing-color-control select { background:#303030; color:#f5f5f5; border-color:#666; }
+@media (prefers-reduced-motion:reduce) { .survey-heading::after,.survey-extra-card,.radar-orbit-label { animation:none !important; } }
+
+/* V9: constelación orbital, partículas y tema consistente */
+.page-encuestas .survey-heading::after { right:1.5%; top:58%; transform:translateY(-50%); font-size:clamp(2rem,4vw,3.5rem); }
+.survey-particles { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+.page-encuestas .survey-shell { position:relative; z-index:1; }
+.survey-particles i { position:absolute; display:block; width:7px; height:7px; border-radius:50%; background:#fff; box-shadow:0 0 12px rgba(255,255,255,.9),0 0 22px rgba(255,218,55,.3); animation:surveyParticleFloat 8s ease-in-out infinite; }
+.survey-particles i:nth-child(1){left:7%;top:13%;width:5px;height:5px;animation-delay:-1s}.survey-particles i:nth-child(2){left:92%;top:25%;background:#ffda37;animation-delay:-3s}.survey-particles i:nth-child(3){left:15%;top:72%;background:#ffda37;animation-delay:-5s}.survey-particles i:nth-child(4){left:83%;top:78%;width:4px;height:4px;animation-delay:-6s}.survey-particles i:nth-child(5){left:52%;top:7%;width:4px;height:4px;animation-delay:-2s}.survey-particles i:nth-child(6){left:68%;top:55%;background:#ffda37;width:5px;height:5px;animation-delay:-7s}
+@keyframes surveyParticleFloat{0%,100%{transform:translate3d(0,0,0);opacity:.35}50%{transform:translate3d(10px,-16px,0);opacity:1}}
+.radar-wrap { background:radial-gradient(circle at center,#fff 0%,#f3f3f3 68%,#e7e7e7 100%); }
+.radar-orbit-label { display:none !important; }
+.radar-legend { grid-template-columns:repeat(2,minmax(0,1fr)); display:grid; gap:.55rem; margin-top:.7rem; }
+.radar-chip { justify-content:space-between; width:100%; padding:.6rem .7rem; border:1px solid #d4d4d4; border-radius:14px; background:#fff; color:#3d3d3d; }
+.radar-chip span { color:inherit !important; }
+.radar-chip b { color:#9a7600; }
+body.dark-mode .page-encuestas .survey-heading::after,body.dark-theme .page-encuestas .survey-heading::after { right:1%; top:66%; color:#ffda37; }
+body.dark-mode .page-encuestas .survey-heading,body.dark-theme .page-encuestas .survey-heading { color:#f5f5f5; }
+body.dark-mode .survey-extra-yellow,body.dark-theme .survey-extra-yellow { background:#6b5b18; color:#fff6bd; }
+body.dark-mode .survey-extra-yellow p,body.dark-theme .survey-extra-yellow p { color:#fff6bd; }
+body.dark-mode .survey-extra-card h3,body.dark-theme .survey-extra-card h3,body.dark-mode .survey-extra-card>span,body.dark-theme .survey-extra-card>span { color:inherit !important; }
+body.dark-mode .radar-wrap,body.dark-theme .radar-wrap { background:radial-gradient(circle at center,#303030 0%,#222 72%,#1b1b1b 100%); }
+body.dark-mode .radar-chip,body.dark-theme .radar-chip { background:#303030; border-color:#666; color:#f5f5f5 !important; }
+body.dark-mode .radar-chip b,body.dark-theme .radar-chip b { color:#ffda37 !important; }
+body.dark-mode .survey-map-actions,body.dark-theme .survey-map-actions { color:#d0d0d0; }
+@media(max-width:650px){.page-encuestas .survey-heading::after{right:3%;top:82%;font-size:2rem}.radar-legend{grid-template-columns:1fr}.survey-particles i:nth-child(5),.survey-particles i:nth-child(6){display:none}}
+@media(prefers-reduced-motion:reduce){.survey-particles i{animation:none!important}}
+
+
+/* V10: gráfico de barras y encuesta espaciosa, con el resultado debajo. */
+.page-encuestas .survey-layout { display:flex; flex-direction:column; gap:2rem; align-items:stretch; }
+.page-encuestas .survey-form, .page-encuestas .survey-result { width:100%; max-width:none; box-sizing:border-box; }
+.page-encuestas .survey-form { padding:clamp(1.35rem,3vw,2.3rem)!important; }
+.page-encuestas .survey-question h3 { max-width:68ch; line-height:1.32; margin:1rem 0 .7rem!important; }
+.page-encuestas .survey-hint { line-height:1.55; margin:.35rem 0 1.15rem!important; }
+.page-encuestas .survey-options { gap:.8rem 1rem; margin-top:.5rem!important; }
+.page-encuestas .survey-choice { min-height:64px!important; padding:.8rem 1rem!important; border-radius:16px; font-size:.98rem; }
+.page-encuestas .survey-result { padding:clamp(1.35rem,3vw,2.3rem); }
+.page-encuestas .radar-wrap { padding:1rem; border-radius:20px; }
+.page-encuestas #survey-radar { display:block; width:100%; max-width:none; height:auto; min-height:270px; }
+.page-encuestas .survey-map-actions { margin-top:1rem; }
+@media (min-width:900px) {
+  .page-encuestas .survey-options { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .page-encuestas .survey-question { min-height:390px!important; }
+}
+@media (max-width:760px) {
+  .page-encuestas .survey-layout { gap:1.25rem; }
+  .page-encuestas .survey-form, .page-encuestas .survey-result { padding:1.1rem!important; }
+  .page-encuestas .survey-choice { min-height:58px!important; font-size:.92rem; }
+  .page-encuestas #survey-radar { min-height:250px; }
+}
+body.dark-mode .page-encuestas .survey-choice, body.dark-theme .page-encuestas .survey-choice { background:#303030; border-color:#5b5b5b; color:#f5f5f5; }
+body.dark-mode .page-encuestas .survey-form, body.dark-mode .page-encuestas .survey-result, body.dark-theme .page-encuestas .survey-form, body.dark-theme .page-encuestas .survey-result { background:rgba(36,36,36,.94); }
+
+/* Borrador manual del lienzo: alterna entre lápiz y borrado localizado. */
+.drawing-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:.55rem; }
+.drawing-toolbar button { min-height:38px; padding:.5rem .8rem; border:1px solid #bdbdbd; border-radius:10px; background:#fff; color:#333; font:700 .75rem 'DM Sans',sans-serif; cursor:pointer; }
+.drawing-toolbar .drawing-eraser.is-active, .drawing-toolbar .drawing-eraser[aria-pressed="true"] { background:#ffda37; border-color:#c69d00; box-shadow:0 0 0 3px rgba(255,218,55,.2); }
+body.dark-mode .drawing-toolbar button { background:#303030; color:#f5f5f5; border-color:#666; }
+body.dark-mode .drawing-toolbar .drawing-eraser.is-active, body.dark-mode .drawing-toolbar .drawing-eraser[aria-pressed="true"] { background:#ffda37; color:#252525; border-color:#ffda37; }
+
+/* En móvil, las notas muestran solo Aula, Familia y Comunidad. */
+@media (max-width:760px){.mobile-hidden-all-filter{display:none!important}}

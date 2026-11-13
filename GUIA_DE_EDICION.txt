@@ -1,0 +1,33 @@
+GUIA DE EDICIÓN · OJO AL PIOJO / OTRA FORMA DE MIRAR (2027)
+
+FOTOS Y PERFILES
+- Abre index.html y busca “FICHA 1”, “FICHA 2” o “FICHA 3”.
+- Cambia el texto “Nombre por agregar”, especialidad/cargo, teléfono o contacto y el contenido de recomendaciones.
+- Las fichas usan imágenes ilustrativas (especialista-muestra-01.png, -02.png, -03.png) en imagenes/. Para reemplazarlas, conserva el nombre de archivo y sobrescribe la imagen con la foto autorizada, o cambia el atributo src dentro de la ficha correspondiente (busca FICHA 1/2/3). Cambia también el alt al nombre real.
+- Duplica un <article class="expert-card"> completo para agregar especialistas.
+
+RECOMENDACIONES GENERALES
+- Busca “Recomendaciones destacadas” en index.html y cambia los textos de las tarjetas En casa, En el aula y Para consultar por contenidos revisados y autorizados.
+
+ENTREVISTAS
+- Copia el video real dentro de videos/. En index.html busca “ENTREVISTA 1/2/3” y cambia el src videos/entrevista-N.mp4, título, especialista y tema.
+- El póster se cambia en el atributo poster (ahora imagenes/titulo.png).
+
+CÓDIGO Y DISEÑO
+- index.html: contenido, fichas y ubicaciones indicadas con comentarios HTML.
+- styles.css: submenús, animaciones, modo oscuro, colores y responsive.
+- script.js: interacción de menú, filtro de notas y búsqueda de profesionales.
+- La sección original de personajes se dejó sin modificar. La cabecera conserva el logo y la paleta originales.
+
+RETRATOS DE MUESTRA Y BLUR
+- Las tres imágenes actuales son ilustrativas, no identifican especialistas reales. Están en imagenes/especialista-muestra-01.png, especialista-muestra-02.png y especialista-muestra-03.png.
+- Para reemplazar una foto, sobrescribe el PNG correspondiente conservando el mismo nombre, o cambia el atributo src en el bloque FICHA 1/2/3 de index.html. Actualiza el texto alt con el nombre real.
+- Las reglas del blur de entrada y el acabado translúcido están al final de styles.css, bajo el comentario “Blur visible de entrada en secciones”. El efecto se disipa al aparecer la sección; el texto queda enfocado.
+
+
+REDES SOCIALES DE LOS PERFILES
+- Los botones sociales de Angie y Hellen están en index.html, dentro del bloque .expert-socials de cada perfil.
+- Los logos ya disponibles se encuentran en la carpeta imagenes/ y se usan sin renombrarlos: imagenes/icono-instagram-logotipo-insignia-moderna_578229-124.avif e imagenes/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.webp.
+- Para cambiar un logo, reemplaza únicamente el archivo por otro conservando exactamente el mismo nombre y extensión, o cambia el atributo src del <img> dentro de index.html. No cambies nombres de retratos, ilustraciones ni logos existentes.
+- YouTube y LinkedIn actualmente usan un distintivo CSS/texto; para poner logos originales, guarda los nuevos archivos dentro de imagenes/ y cambia solo el src del <img> correspondiente.
+- La adaptación móvil está al final de styles.css, dentro de @media (max-width:650px), en las reglas .expert-socials y .expert-social-links.

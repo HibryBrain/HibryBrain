@@ -1,0 +1,20 @@
+OTRA FORMA DE MIRAR — PROYECTO EDUCATIVO SOBRE EL TDAH
+
+La portada index.html ahora presenta una guía visual con filtros por tema, tarjetas animadas y progreso de exploración. Cada sección cuenta con su propio archivo HTML, CSS y JavaScript (por ejemplo: que-es-el-tdah.html, que-es-el-tdah.css y que-es-el-tdah.js). Las páginas usan styles.css como base visual compartida y conservan además sus estilos e interacciones propios. La página de creadores (creadores.html, creadores.css y creadores.js) se mantiene independiente.
+
+Para abrir el sitio, descomprime el ZIP y abre index.html. Si el navegador bloquea funciones locales, ejecuta iniciar-local.sh (Linux/macOS) o iniciar-local.bat (Windows), y visita http://localhost:8000.
+
+Secciones independientes: bienvenida, video de bienvenida, inicio, ¿qué es el TDAH?, recorrido, personajes, especialistas, entrevistas, blog, galería, minijuegos, encuestas, redes y estadísticas.
+
+Los paneles informativos que antes dependían de botones de despliegue se muestran ahora abiertos en su propia página. Se conservaron/repararon los minijuegos de memoria, dibujo y atención, el carrusel de galería, la encuesta orientativa y la ampliación de perfiles. La página de estadísticas cuenta visitas solo en el almacenamiento local de este navegador; no son datos globales ni visitantes únicos.
+
+Las páginas son adaptables a móvil, tablet y escritorio. Las preferencias de tema y el progreso se guardan localmente en el navegador.
+
+Nota educativa: el contenido sensibiliza e informa; no realiza diagnósticos ni reemplaza una valoración profesional.
+
+
+Recursos visuales renombrados (2026): personajes-pixel/ contiene sprites por nombre de personaje; potenciadores/ contiene iconos con nombre de habilidad; escenarios/ contiene fondos pixel-art con nombre descriptivo. El minijuego usa escenarios/bosque-de-la-calma.png exclusivamente en esa página.
+
+Actualización minijuegos: se agregó un cuarto reto independiente, “Aventura pixel: portales perdidos”. Los potenciadores equipados modifican exclusivamente ese juego; los tres minijuegos anteriores (incluida Misión foco) conservan sus reglas y temporizador. Los cinco personajes pixelados pueden seleccionarse como avatar.
+
+Actualización minijuegos (reto cognitivo): el cuarto juego ahora es una prueba de memoria de trabajo y atención con símbolos que se muestran por turnos y luego se ocultan. Se reproducen en orden entre distractores; la secuencia crece cada dos rondas y el reloj se acorta. Incluye dificultad Suave/Media/Experta, botón de calibración rápida, reinicio de actividad y efectos de poderes limitados a este reto. Se retiraron partículas y personajes flotantes y se aplicó la paleta amarillo/gris/negro/blanco con un nuevo escenario; el diseño responde a móvil, tablet, PC y tema claro/oscuro.

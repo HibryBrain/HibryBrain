@@ -1,0 +1,43 @@
+CAMBIOS DE ESTA ACTUALIZACIÓN
+
+- X del menú del engranaje circular en todos los tamaños de pantalla; botón engranaje compacto y animado.
+- Se conserva el menú y sus controles. Los ajustes Ahorro, movimiento reducido, partículas, efectos y sombras aplican reglas CSS para poder desactivarlos.
+- Segundo video de Recorrido («Cómo es tener TDAH medicado»): las tarjetas muestran el tiempo restante y la barra sincronizada al reproductor. Al pasar cada marca de tiempo, se pausa el video, se desbloquea la pregunta y aparece sobre el reproductor un aviso con «Ver pregunta» y «Seguir video», igual que en el primero.
+- Inicio: las estaciones y tarjetas permanecen plegadas hasta que el usuario pulse «Todas» o una categoría; se muestra una instrucción mientras están plegadas.
+- Personajes originales completos, sin filtros ni recorte, colocados como decoraciones flotantes de baja opacidad en el fondo de cada sección.
+- En móvil, las animaciones de contenido comienzan al desplazarse hasta las secciones; el menú permite desactivar animaciones, partículas, efectos y sombras.
+- Notas: quitado «Leer nota», equilibradas las tarjetas para escritorio/tablet/móvil y ampliado el contenido práctico de aula, familia y comunidad. Se contemplan los temas Todos, Aula, Familia y Comunidad.
+- Mejoras de contraste de modo oscuro conservadas para tarjetas, avisos y temporizadores.
+
+
+CORRECCIONES FINALES DE ESTA ENTREGA
+- Portada: órbitas de fondo fuera del flujo para eliminar la altura y el espacio vacío; personaje y textos ordenados en móvil y etiquetas en cápsulas horizontales sin desbordarse.
+- Recorrido: ocho cuentas regresivas visibles para «Cómo es tener TDAH medicado», botón funcional para reiniciar y aviso al desbloquear una pregunta.
+- Menú: una sola lógica de apertura/cierre; permite expandir submenús y cerrar/reabrir en móvil, con panel acotado y adaptación para tablet.
+- JavaScript: corregida redeclaración de videoButton y starCount no definido; comprobación Chromium sin errores de página.
+- Se preservan las imágenes de personajes originales; sólo se muestran translúcidas y flotantes.
+
+ACTUALIZACIÓN MÓVIL ADICIONAL
+- En Introducción, «Todas las secciones» aparece en una fila superior y el texto del hero queda con margen de 16 px en móviles.
+- La sección «Investigar también es acompañar mejor» y los botones de acceso de secciones usan márgenes laterales seguros en móviles pequeños.
+
+CORRECCIONES DE ESTA ENTREGA V9
+- El mapa personal cambió de radar a constelación orbital con cuatro nodos, órbitas, conexión animada y selección interactiva.
+- Se eliminó la etiqueta «Tu ritmo» del centro del mapa.
+- Las tarjetas de Atención, Organización, Memoria e Inquietud ya no muestran símbolos; conservan sólo el texto y el porcentaje.
+- Se reforzó el contraste de tarjetas, textos, mapa, botones y etiquetas tanto en modo claro como oscuro.
+- Se añadieron partículas flotantes blancas y amarillas con movimiento suave y soporte para reducción de movimiento.
+- La partícula decorativa grande del encabezado se desplazó lateralmente para no superponerse al título.
+- Se ajustaron tamaños, columnas y espacios para teléfono, tablet y PC.
+
+
+CORRECCIÓN SOLICITADA
+- El mapa personal ahora se muestra como gráfico de barras horizontales con puntas redondeadas.
+- Toda la sección del resultado se movió debajo de las preguntas de la encuesta.
+- Se aumentaron los espacios, alturas y separación de las preguntas y opciones para evitar que queden apiñadas.
+
+
+Correcciones adicionales: traducción completa de historias dinámicas y encuestas; menú móvil con un único manejador táctil; borrador manual alternable en el lienzo de Minijuegos.
+
+
+Modificación móvil: redes sociales, código QR y configuración agrupados en un botón general arrastrable; el agrupador no altera la disposición de escritorio. En Notas, el filtro Todos se oculta únicamente en móvil.

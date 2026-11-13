@@ -1,0 +1,5 @@
+/* Estilos específicos de la página: Una historia se entiende mejor cuando se vive.. La identidad visual base vive en styles.css. */
+body.page-recorrido main > section { min-height: 70vh; animation: sectionPageEnter .65s cubic-bezier(.2,.7,.2,1) both; }
+body.page-recorrido .section-return-link { display:inline-flex; align-items:center; gap:.45rem; margin:0 0 1.25rem; text-decoration:none; font-weight:700; }
+@keyframes sectionPageEnter { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+@media (prefers-reduced-motion: reduce) { body.page-recorrido main > section { animation:none; } }
